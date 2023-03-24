@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!--Material Symbol-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">dashboard</span> Dashboard
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-symbols-outlined">bed</span> Bedroom
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-symbols-outlined">kitchen</span> Kitchen
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-symbols-outlined">wc</span> Washroom
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-symbols-outlined">local_library</span> Study Area
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">DASHBOARD</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">TEMPERATURE</p>
+              <span class="material-icons-outlined text-blue">device_thermostat</span>
+            </div>
+            <span class="TEMPERATURE font-weight-bold">Loading...</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">HUMIDITY</p>
+              <span class="material-symbols-outlined text-orange">humidity_percentage</span>
+            </div>
+            <span class="HUMIDITY font-weight-bold">Loading...</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">HEAT INDEX</p>
+              <span class="material-symbols-outlined text-green">emergency_heat</span>
+            </div>
+            <span class="HI font-weight-bold">Loading...</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">THERMAL DISCOMFORT LEVEL</p>
+              <span class="material-symbols-outlined text-red">sick</span>
+            </div>
+            <span class="DL font-weight-bold">Loading...</span>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">Temperature</p>
+            <div id="area-chart1"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Humidity</p>
+            <div id="area-chart2"></div>
+          </div>
+          
+        </div>
+        <!-- <img src="http://www.7timer.info/bin/astro.php?lon=22.318646446101877&lat=87.3134293574327&ac=0&lang=en&unit=metric&output=internal&tzshift=0" alt="Girl in a jacket" width="500" height="300"> -->
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
